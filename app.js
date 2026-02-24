@@ -69,53 +69,53 @@ phoneInput.addEventListener('input', function (e) {
 });
 
 // Функция валидации (обнови существующую)
-function validateForm() {
-    let isValid = true;
+// function validateForm() {
+//     let isValid = true;
 
-    // Сброс ошибок
-    document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-    document.querySelectorAll('input, select').forEach(el => el.classList.remove('error'));
+//     // Сброс ошибок
+//     document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+//     document.querySelectorAll('input, select').forEach(el => el.classList.remove('error'));
 
-    // Валидация имени
-    const nameValue = document.getElementById('name').value.trim();
-    if (!nameValue) {
-        showError('name', 'Введите имя');
-        isValid = false;
-    }
+//     // Валидация имени
+//     const nameValue = document.getElementById('name').value.trim();
+//     if (!nameValue) {
+//         showError('name', 'Введите имя');
+//         isValid = false;
+//     }
 
-    // Валидация телефона
-    const phoneValue = phoneInput.value.trim();
-    if (!phoneValue) {
-        showError('phone', 'Введите номер телефона');
-        isValid = false;
-    } else {
-        // Проверяем количество цифр
-        const digits = phoneValue.replace(/\D/g, '');
-        if (digits.length < 7) {
-            showError('phone', 'Минимум 7 цифр');
-            isValid = false;
-        }
-        if (digits.length > 15) {
-            showError('phone', 'Слишком длинный номер');
-            isValid = false;
-        }
-    }
+//     // Валидация телефона
+//     const phoneValue = phoneInput.value.trim();
+//     if (!phoneValue) {
+//         showError('phone', 'Введите номер телефона');
+//         isValid = false;
+//     } else {
+//         // Проверяем количество цифр
+//         const digits = phoneValue.replace(/\D/g, '');
+//         if (digits.length < 7) {
+//             showError('phone', 'Минимум 7 цифр');
+//             isValid = false;
+//         }
+//         if (digits.length > 15) {
+//             showError('phone', 'Слишком длинный номер');
+//             isValid = false;
+//         }
+//     }
 
-    // Валидация услуги
-    const serviceValue = document.getElementById('service').value;
-    if (!serviceValue) {
-        showError('service', 'Выберите услугу');
-        isValid = false;
-    }
+//     // Валидация услуги
+//     const serviceValue = document.getElementById('service').value;
+//     if (!serviceValue) {
+//         showError('service', 'Выберите услугу');
+//         isValid = false;
+//     }
 
-    // Валидация согласия
-    if (!document.getElementById('agree').checked) {
-        showError('agree', 'Необходимо согласие');
-        isValid = false;
-    }
+//     // Валидация согласия
+//     if (!document.getElementById('agree').checked) {
+//         showError('agree', 'Необходимо согласие');
+//         isValid = false;
+//     }
 
-    return isValid;
-}
+//     return isValid;
+// }
 
 // Функция валидации
 function validateForm() {
