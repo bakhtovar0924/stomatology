@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- SEO оптимизация -->
+    <title>Стоматология "DentalCare" - Современная стоматология в центре города</title>
+    <meta name="description"
+        content="Профессиональная стоматология DentalCare. Лечение зубов, имплантация, отбеливание. Современное оборудование, опытные врачи, доступные цены. Запишитесь онлайн!">
+    <meta name="keywords"
+        content="стоматология, лечение зубов, имплантация, отбеливание, протезирование, детский стоматолог">
+    <meta name="author" content="DentalCare">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Стоматология DentalCare">
+    <meta property="og:description" content="Лечение зубов с заботой о вас. Современные технологии и комфорт.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dentalcare.ru">
+    <meta property="og:image" content="https://dentalcare.ru/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230072b0'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E">
+
+    <!-- Preconnect для шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome для иконок (минимальный набор) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- WhatsApp кнопка (фиксированная) -->
+    <a href="https://wa.me/929368030?text=Здравствуйте!%20Хочу%20записаться%20на%20прием" class="whatsapp-btn"
+        target="_blank" rel="noopener noreferrer" aria-label="Связаться через WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true" style="color: black;"></i>
+        <span style="color: black;">WhatsApp</span>
+    </a>
+
+    <!-- Header с навигацией -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo" aria-label="На главную">
+                    <span class="logo-icon">🦷</span>
+                    <span>DentalCare</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#prices" class="nav-link">Цены</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero секция -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content animate-on-scroll">
+                    <span class="hero-badge">С заботой о вашей улыбке</span>
+                    <h1>Современная стоматология <span class="text-accent">DentalCare</span></h1>
+                    <p class="hero-description">
+                        Лечение без боли, опытные врачи, современное оборудование.
+                        Подарите себе здоровую улыбку уже сегодня!
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">лет опыта</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">довольных пациентов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">поддержка</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary"
+                            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            Записаться
+                        </button>
+                        <button class="btn btn-outline"
+                            onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                            Наши услуги
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image animate-on-scroll">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='200' r='150' fill='%230072b0' opacity='0.1'/%3E%3Ccircle cx='200' cy='200' r='120' fill='%230072b0' opacity='0.2'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='48' fill='%230072b0' text-anchor='middle' dy='.3em'%3E🦷%3C/text%3E%3C/svg%3E"
+                        alt="Стоматология DentalCare - лечение зубов" width="400" height="400" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Наши услуги</h2>
+                    <p>Современные методики лечения и индивидуальный подход</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll" data-delay="0">
+                        <div class="service-icon">🦷</div>
+                        <h3>Лечение зубов</h3>
+                        <p>Качественное лечение кариеса, пульпита и других заболеваний с использованием микроскопа</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" data-delay="100">
+                        <div class="service-icon">✨</div>
+                        <h3>Отбеливание</h3>
+                        <p>Безопасное отбеливание зубов за 1 сеанс. Результат до 8 тонов светлее</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" data-delay="200">
+                        <div class="service-icon">🦷</div>
+                        <h3>Имплантация</h3>
+                        <p>Восстановление зубов с использованием лучших имплантационных систем</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" data-delay="300">
+                        <div class="service-icon">😁</div>
+                        <h3>Исправление прикуса</h3>
+                        <p>Элайнеры и брекет-системы для идеальной улыбки</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" data-delay="400">
+                        <div class="service-icon">👑</div>
+                        <h3>Протезирование</h3>
+                        <p>Коронки, виниры, мосты из современных материалов</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" data-delay="500">
+                        <div class="service-icon">👶</div>
+                        <h3>Детская стоматология</h3>
+                        <p>Лечение без страха в игровой форме</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены -->
+        <section id="prices" class="prices">
+            <div class="container" style="padding: 20px;">
+                <div class="section-header animate-on-scroll">
+                    <h2>Цены на услуги</h2>
+                    <p>Прозрачное ценообразование без скрытых платежей</p>
+                </div>
+                <div class="prices-grid">
+                    <div class="price-card animate-on-scroll" data-delay="0">
+                        <h3>Прием и консультация</h3>
+                        <div class="price">от 1 000 ₽</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Осмотр и диагностика</li>
+                            <li><i class="fas fa-check"></i> Составление плана лечения</li>
+                            <li><i class="fas fa-check"></i> Рекомендации по уходу</li>
+                        </ul>
+                    </div>
+                    <div class="price-card popular animate-on-scroll" data-delay="100">
+                        <div class="popular-badge">Популярное</div>
+                        <h3>Лечение кариеса</h3>
+                        <div class="price">от 5 000 ₽</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Анестезия</li>
+                            <li><i class="fas fa-check"></i> Лечение под микроскопом</li>
+                            <li><i class="fas fa-check"></i> Пломба светового отверждения</li>
+                            <li><i class="fas fa-check"></i> Гарантия 2 года</li>
+                        </ul>
+                    </div>
+                    <div class="price-card animate-on-scroll" data-delay="200">
+                        <h3>Профессиональная чистка</h3>
+                        <div class="price">от 4 500 ₽</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Ультразвук</li>
+                            <li><i class="fas fa-check"></i> Air Flow</li>
+                            <li><i class="fas fa-check"></i> Полировка и фторирование</li>
+                        </ul>
+                    </div>
+                    <div class="price-card animate-on-scroll" data-delay="300">
+                        <h3>Отбеливание</h3>
+                        <div class="price">от 15 000 ₽</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Профессиональная система</li>
+                            <li><i class="fas fa-check"></i> Защита десен</li>
+                            <li><i class="fas fa-check"></i> Результат сразу</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Отзывы пациентов</h2>
+                    <p>Более 5000 человек доверили нам свою улыбку</p>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card animate-on-scroll" data-delay="0">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Очень боялась лечить зубы, но в DentalCare все прошло отлично! Врачи
+                            внимательные, все объясняют, современное оборудование. Теперь только сюда!"</p>
+                        <div class="review-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23e0e0e0'/%3E%3Ccircle cx='25' cy='18' r='7' fill='%23999'/%3E%3Ccircle cx='18' cy='15' r='1.5' fill='%23333'/%3E%3Ccircle cx='32' cy='15' r='1.5' fill='%23333'/%3E%3Cpath d='M20 25 Q25 30,30 25' stroke='%23999' stroke-width='2' fill='none'/%3E%3C/svg%3E"
+                                alt="Анна Петрова" width="50" height="50" loading="lazy">
+                            <div>
+                                <h4>Анна Петрова</h4>
+                                <p>лечение кариеса</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card animate-on-scroll" data-delay="100">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Делал имплантацию. Все прошло отлично, врач профессионал своего дела.
+                            Через 4 месяца уже поставил коронку. Рекомендую!"</p>
+                        <div class="review-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23e0e0e0'/%3E%3Ccircle cx='25' cy='18' r='7' fill='%23999'/%3E%3Ccircle cx='18' cy='15' r='1.5' fill='%23333'/%3E%3Ccircle cx='32' cy='15' r='1.5' fill='%23333'/%3E%3C/svg%3E"
+                                alt="Михаил Иванов" width="50" height="50" loading="lazy">
+                            <div>
+                                <h4>Михаил Иванов</h4>
+                                <p>имплантация</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card animate-on-scroll" data-delay="200">
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Вожу ребенка уже 2 года. Отличный подход к детям, игровая комната,
+                            добрые врачи. Ребенок не боится и ходит с удовольствием!"</p>
+                        <div class="review-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23e0e0e0'/%3E%3Ccircle cx='25' cy='18' r='7' fill='%23999'/%3E%3Ccircle cx='18' cy='15' r='1.5' fill='%23333'/%3E%3Ccircle cx='32' cy='15' r='1.5' fill='%23333'/%3E%3C/svg%3E"
+                                alt="Елена Смирнова" width="50" height="50" loading="lazy">
+                            <div>
+                                <h4>Елена Смирнова</h4>
+                                <p>детская стоматология</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи (контакты) -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper" style="padding: 20px 0;">
+                    <div class="contact-info animate-on-scroll">
+                        <h2>Запишитесь на прием</h2>
+                        <p>Оставьте заявку и мы свяжемся с вами в ближайшее время для выбора удобного времени</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Телефон</h4>
+                                    <a href="tel:+79161234567">+7 (916) 123-45-67</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Адрес</h4>
+                                    <p>г. Москва, ул. Примерная, д. 123</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Режим работы</h4>
+                                    <p>Ежедневно с 9:00 до 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form animate-on-scroll" id="appointmentForm" novalidate>
+                        <h3>Онлайн-запись</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="+992 ___-__-__" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="consultation">Консультация</option>
+                                <option value="treatment">Лечение зубов</option>
+                                <option value="whitening">Отбеливание</option>
+                                <option value="implantation">Имплантация</option>
+                                <option value="child">Детский прием</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment" name="comment" placeholder="Комментарий (необязательно)"
+                                rows="3"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <span>Я согласен на обработку персональных данных</span>
+                            </label>
+                            <span class="error-message" id="agreeError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+                        <div class="form-success" id="formSuccess" hidden>
+                            <i class="fas fa-check-circle"></i>
+                            Спасибо! Мы свяжемся с вами в ближайшее время.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🦷</span>
+                        <span>DentalCare</span>
+                    </a>
+                    <p>Современная стоматология с заботой о вашем здоровье</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DentalCare. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
